@@ -6,5 +6,5 @@ echo "This command won't exit. click on the *Web Preview* (up-arrow button at to
 echo "Tunneling to instance=$INSTANCE_NAME"
 
 gcloud compute ssh --zone $ZONE \
-   --ssh-flag="-N" --ssh-flag="-L" --ssh-flag="localhost:8081:localhost:8080" \
+   --ssh-flag="-N" --ssh-flag="-L" --ssh-flag="localhost:8080:localhost:8080" \
    ${USER}@$INSTANCE_NAME
